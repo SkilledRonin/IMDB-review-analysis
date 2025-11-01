@@ -10,7 +10,7 @@ from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import LSTM, Dense, Dropout, SpatialDropout1D, Embedding
 
 # Load dataset
-df = pd.read_csv(r"C:\Users\likei\Desktop\IMDB review analysis\IMDB Dataset.csv")  # Adjust path if needed
+df = pd.read_csv(r"IMDB Dataset.csv")  # ENTER .csv file location here
 print("Dataset shape:", df.shape)
 print(df.head())
 
@@ -74,5 +74,6 @@ def predict_sentiment(text):
 if __name__ == "__main__":
     predict_sentiment("I loved this movie! It was fantastic.")
     predict_sentiment("This was the worst film I've ever watched.")
+
 
 
